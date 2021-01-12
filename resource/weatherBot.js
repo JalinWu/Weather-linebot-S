@@ -41,7 +41,7 @@ let weatherBot = async function (bot) {
         // 使用者輸入的內容
         var userMsg = event.message.text;
 
-        // write your code here
+        // write your code here 
 
     });
 }
