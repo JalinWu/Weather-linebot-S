@@ -38,28 +38,10 @@ var webhookEvent = function (bot) {
 let weatherBot = async function (bot) {
 
     bot.on('message', async function (event) {
+        // 使用者輸入的內容
         var userMsg = event.message.text;
-        console.log(userMsg);
 
-        if (userMsg == "help") {
-            event.reply("請對我輸入指令，目前有的指令有:\n-地震\n-[地區]，ex: 臺北")
-        } else if (userMsg == "地震") {
-            let earthQImg = await getEarthQ();
-            console.log(earthQImg);
-            
-            event.reply({
-                type: 'image',
-                originalContentUrl: earthQImg,
-                previewImageUrl: earthQImg
-            })
-
-        } else {
-            let weather = await getWeather(userMsg);
-            console.log(weather);
-            
-            event.reply(weather); // flex msg
-
-        }
+        // write your code here
 
     });
 }
