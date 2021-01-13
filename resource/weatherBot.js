@@ -43,6 +43,7 @@ let weatherBot = async function (bot) {
         var userMsg = event.message.text;
 
         // write your code here 
+        // "請對我輸入指令，目前有的指令有:\n-地震\n-[地區]，ex: 臺北"
 
     });
 }
