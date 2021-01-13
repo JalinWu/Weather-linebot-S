@@ -1,5 +1,6 @@
-const { getWeather } = require('./getWeather');
+const { getWeather, getWeatherObject } = require('./getWeather');
 const { getEarthQ } = require('./getEarthQ');
+const { getFlexMsg } = require('./getFlexMsg');
 
 // 各種通知
 var webhookEvent = function (bot) {
