@@ -18,7 +18,7 @@ const app = express();
 // for line webhook usage
 app.post('/webhook', linebotParser);
 
-let PORT = 3000;
+let PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is started on ${PORT}`);
 });

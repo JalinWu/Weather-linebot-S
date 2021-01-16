@@ -24,5 +24,9 @@ $ npm run dev
 ```
 
 ```sh
-$ ngrok http 3000
+# mac
+$ ./ngrok http 3000
+
+# windows
+$ ngrok-win http 3000
 ``` 
